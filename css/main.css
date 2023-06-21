@@ -1,0 +1,188 @@
+.wrapper {
+  height: 100%;
+  display: grid;
+  grid-template-areas:
+    "aside header"
+    "aside main";
+  grid-template-columns: 252px 1fr;
+  grid-template-rows: auto 1fr;
+}
+
+.aside {
+  grid-area: aside;
+  background-color: #fff;
+  padding: 51px 55px;
+}
+
+.header {
+  grid-area: header;
+  display: flex;
+  justify-content: flex-end;
+  gap: 11px;
+  padding: 46px 56px 66px;
+}
+
+.main {
+  grid-area: main;
+  display: flex;
+}
+
+.explore {
+  margin-top: 57px;
+  margin-bottom: 54px;
+  font-family: "Montserrat";
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #000000;
+}
+
+.aside nav a {
+  font-family: "Montserrat";
+  font-weight: 500;
+  font-size: 15.7099px;
+  line-height: 19px;
+  color: #000000;
+}
+
+.aside ul {
+  display: grid;
+  gap: 30px;
+}
+
+.aside li {
+  padding-left: 35px;
+  position: relative;
+}
+
+.aside li::before {
+  content: "";
+  display: inline-block;
+  left: 0;
+  position: absolute;
+}
+.aside .new_in::before {
+  background-image: url(/img/icons/electro.png);
+  width: 22.44px;
+  height: 22.44px;
+}
+.aside .cloth::before {
+  background-image: url(/img/icons/cloth.png);
+  width: 21.32px;
+  height: 21.32px;
+}
+.aside .shoes::before {
+  background-image: url(/img/icons/shoes.png);
+  width: 17.95px;
+  height: 17.95px;
+}
+.aside .accessories::before {
+  background-image: url(/img/icons/bag.png);
+  width: 17.95px;
+  height: 17.95px;
+}
+.aside .activewear::before {
+  background-image: url(/img/icons/sport.png);
+  width: 20.2px;
+  height: 20.2px;
+}
+.aside .gifts::before {
+  background-image: url(/img/icons/gift.png);
+  width: 20.2px;
+  height: 20.2px;
+}
+.aside .inspiration::before {
+  background-image: url(/img/icons/diamond.png);
+  width: 26.93px;
+  height: 26.93px;
+}
+
+.btn {
+  display: flex;
+  gap: 42px;
+}
+
+.icons {
+  display: flex;
+  gap: 25px;
+}
+
+.header li {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 21px;
+  position: relative;
+}
+
+.underline::before {
+  content: "";
+  position: absolute;
+  bottom: -8px;
+  display: block;
+  height: 1px;
+  background: #000;
+  width: calc(100% - 6px);
+}
+
+.header nav {
+  justify-content: flex-end;
+}
+
+.main {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
+  grid-template-areas: "fcol scol";
+}
+
+.fcol {
+  grid-area: fcol;
+  margin-left: 37px; 
+
+}
+.scol {
+  grid-area: scol;
+  margin-right: 52px;
+
+}
+
+.get {
+margin: 0 21px 21px 0;
+}
+
+.sum{
+    margin: 0 21px 21px 0;
+
+}
+
+.pink {
+    margin: 0 21px 21px 0;
+
+}
+
+.green{
+    margin: 0 21px 21px 0;
+
+}
+
+.viol{
+    margin: 0 0 21px 0;
+
+}
+
+.blue{
+    margin: 0 0 21px 21px;
+
+}
+
+.trend{
+    margin: 0 0 21px 0;
+
+}
+
+.buy{
+    margin: 0 0 21px 0;
+
+}
